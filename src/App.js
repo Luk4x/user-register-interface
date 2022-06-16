@@ -1,11 +1,22 @@
-import { Container, H1 } from './styles.js';
+import { MainContainer, TalkingImage, SecondaryContainer, H1, Label, Input, Button } from './styles';
 
 const App = () => {
-    const hello = 'Yo!';
     return (
-        <Container>
-            <H1>{hello}</H1>
-        </Container>
+        <MainContainer>
+            <TalkingImage />
+            <SecondaryContainer>
+                <H1>Yo!</H1>
+                <Label>
+                    Name:
+                    <Input placeholder="Name..."></Input>
+                </Label>
+                <Label>
+                    Age:
+                    <Input placeholder="Age..."></Input>
+                </Label>
+                <Button>Register</Button>
+            </SecondaryContainer>
+        </MainContainer>
     );
 };
 

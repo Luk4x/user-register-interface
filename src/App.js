@@ -1,8 +1,12 @@
-import './styles.css';
+import { Container, H1 } from './styles.js';
 
 const App = () => {
     const hello = 'Yo!';
-    return <h1 className="title">{hello}</h1>;
+    return (
+        <Container>
+            <H1>{hello}</H1>
+        </Container>
+    );
 };
 
 export default App;

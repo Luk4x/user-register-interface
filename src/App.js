@@ -1,5 +1,8 @@
+import './styles.css';
+
 const App = () => {
-    return <h1>yo</h1>;
+    const hello = 'Yo!';
+    return <h1 className="title">{hello}</h1>;
 };
 
 export default App;

@@ -7,5 +7,6 @@ export default createGlobalStyle`
         box-sizing: border-box;
         border: none;
         outline: none;
+        font-family: 'KoHo', sans-serif;
     }
 `;

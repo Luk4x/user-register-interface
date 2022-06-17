@@ -23,6 +23,7 @@ export const SecondaryContainer = styled.div`
     border-radius: 61px 61px 0px 0px;
     padding: 50px 40px;
     width: 100%;
+    max-width: 420px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -30,11 +31,17 @@ export const SecondaryContainer = styled.div`
 `;
 
 export const H1 = styled.h1`
-    font-weight: 600;
-    font-size: 34px;
+    font-weight: 500;
+    font-size: 40px;
     line-height: 40px;
     color: whitesmoke;
     margin-bottom: 15px;
+    background: linear-gradient(45deg, #6317a9, #c89bf1);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    text-shadow: 1px 1px 4px #6317a9bb;
 `;
 
 export const Label = styled.label`
@@ -42,7 +49,7 @@ export const Label = styled.label`
     flex-direction: column;
     gap: 5px;
     width: 80%;
-    max-width: 400px;
+    max-width: 380px;
 `;
 
 export const P = styled.p`
@@ -54,13 +61,19 @@ export const P = styled.p`
 
 export const Input = styled.input`
     background: rgba(255, 255, 255, 0.25);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
     padding: 15px 0 15px 25px;
     width: 100%;
     height: 48px;
     font-size: 16px;
     color: whitesmoke;
+    transition: all 0.2s ease-in-out;
+
+    &:hover,
+    &:focus {
+        transform: translateY(2px);
+    }
 `;
 
 export const Button = styled.button`
@@ -68,13 +81,20 @@ export const Button = styled.button`
     color: whitesmoke;
     border-radius: 5px;
     width: 80%;
-    max-width: 400px;
+    max-width: 380px;
     height: 60px;
     margin-top: 20px;
     cursor: pointer;
     font-size: 17px;
+    font-weight: 300;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 6px;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+        transform: translateY(3px);
+        opacity: 0.95;
+    }
 `;

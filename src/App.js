@@ -1,20 +1,25 @@
-import { MainContainer, TalkingImage, SecondaryContainer, H1, Label, Input, Button } from './styles';
+import { MainContainer, TalkingImage, SecondaryContainer, H1, Label, P, Input, Button } from './styles';
+import TalkingImageSVG from './assets/talkingImg.svg';
+import 'boxicons';
 
 const App = () => {
     return (
         <MainContainer>
-            <TalkingImage />
+            <TalkingImage src={TalkingImageSVG} alt="people talking image" />
             <SecondaryContainer>
                 <H1>Yo!</H1>
                 <Label>
-                    Name:
-                    <Input placeholder="Name..."></Input>
+                    <P>Name:</P>
+                    <Input placeholder="Lucas"></Input>
                 </Label>
                 <Label>
-                    Age:
-                    <Input placeholder="Age..."></Input>
+                    <P>Age:</P>
+                    <Input placeholder="18"></Input>
                 </Label>
-                <Button>Register</Button>
+                <Button>
+                    Register
+                    <box-icon type="solid" name="chevron-right" color="white" animation="flashing"></box-icon>
+                </Button>
             </SecondaryContainer>
         </MainContainer>
     );

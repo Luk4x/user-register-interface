@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 import Background1 from './assets/background1.svg';
 
 export const MainContainer = styled.div`
@@ -20,7 +20,7 @@ export const TalkingImage = styled.img`
 
 export const SecondaryContainer = styled.div`
     background: linear-gradient(157.44deg, rgba(255, 255, 255, 0.6) 0.84%, rgba(255, 255, 255, 0.6) 0.85%, rgba(255, 255, 255, 0.15) 100%);
-    border-radius: 61px 61px 0px 0px;
+    border-radius: 10px 10px 0px 0px;
     padding: 50px 40px;
     width: 100%;
     max-width: 420px;
@@ -72,7 +72,7 @@ export const Input = styled.input`
 
     &:hover,
     &:focus {
-        transform: translateY(2px);
+        transform: translateY(1.5px);
     }
 `;
 
@@ -96,5 +96,39 @@ export const Button = styled.button`
     &:hover {
         transform: translateY(3px);
         opacity: 0.95;
+    }
+`;
+
+export const UsersList = styled.ul`
+    list-style-type: none;
+    width: 80%;
+    max-width: 380px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+`;
+
+export const UserItem = styled.li`
+    list-style-type: none;
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 15px 25px;
+    width: 100%;
+    height: 48px;
+    font-size: 16px;
+    color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    p {
+        font-size: 16px;
+    }
+
+    box-icon {
+        cursor: pointer;
     }
 `;

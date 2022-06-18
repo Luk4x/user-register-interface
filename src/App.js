@@ -1,8 +1,15 @@
-import { MainContainer, TalkingImage, SecondaryContainer, H1, Label, P, Input, Button } from './styles';
+import React, { useState } from 'react';
+import { MainContainer, TalkingImage, SecondaryContainer, H1, Label, P, Input, Button, UsersList, UserItem } from './styles';
 import TalkingImageSVG from './assets/talkingImg.svg';
 import 'boxicons';
 
 const App = () => {
+    const [users, setUsers] = useState([]);
+
+    const registerUser = () => {
+        setUsers([{ id: Math.random(), name: 'Akame', age: 16 }]);
+    };
+
     return (
         <MainContainer>
             <TalkingImage src={TalkingImageSVG} alt="people talking image" />
@@ -16,11 +23,21 @@ const App = () => {
                     <P>Age:</P>
                     <Input placeholder="18"></Input>
                 </Label>
-                <Button>
-                    Register
+                <Button onClick={registerUser}>
+                    <p>Register</p>
                     <box-icon type="solid" name="chevron-right" color="white" animation="flashing"></box-icon>
                 </Button>
             </SecondaryContainer>
+
+            <UsersList>
+                {users.map(user => (
+                    <UserItem key={user.id}>
+                        <p>{user.name}</p>
+                        <p>{user.age}</p>
+                        <box-icon type="solid" name="trash" color="red" animation="tada-hover"></box-icon>
+                    </UserItem>
+                ))}
+            </UsersList>
         </MainContainer>
     );
 };

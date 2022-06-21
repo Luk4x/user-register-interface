@@ -27,7 +27,7 @@ const App = () => {
     };
 
     const registerUser = () => {
-        if (verifyUserName(userName) && verifyUserAge(userAge)) setUsers([{ id: Math.random(), name: userName, age: userAge }]);
+        if (verifyUserName(userName) && verifyUserAge(userAge)) setUsers([...users, { id: Math.random(), name: userName, age: userAge }]);
     };
 
     const setName = event => {

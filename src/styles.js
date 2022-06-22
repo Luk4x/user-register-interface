@@ -74,6 +74,10 @@ export const Input = styled.input`
     &:focus {
         transform: translateY(1.5px);
     }
+
+    &::placeholder {
+        font-style: italic;
+    }
 `;
 
 export const Button = styled.button`

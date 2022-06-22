@@ -1,7 +1,7 @@
-import styled, { keyframes } from 'styled-components';
+import styled from 'styled-components';
 import Background1 from './assets/background1.svg';
 
-export const MainContainer = styled.div`
+export const MainContainer = styled.main`
     background: url('${Background1}') no-repeat fixed center center;
     background-size: cover;
     display: flex;
@@ -18,7 +18,7 @@ export const TalkingImage = styled.img`
     max-width: 800px;
 `;
 
-export const SecondaryContainer = styled.div`
+export const SecondaryContainer = styled.section`
     background: linear-gradient(157.44deg, rgba(255, 255, 255, 0.6) 0.84%, rgba(255, 255, 255, 0.6) 0.85%, rgba(255, 255, 255, 0.15) 100%);
     border-radius: 10px 10px 0px 0px;
     padding: 50px 40px;
@@ -132,7 +132,11 @@ export const UserItem = styled.li`
         font-size: 16px;
     }
 
-    box-icon {
-        cursor: pointer;
+    button {
+        background: none;
+
+        box-icon {
+            cursor: pointer;
+        }
     }
 `;

@@ -31,8 +31,9 @@ const App = () => {
         if (verifyUserName(name) && verifyUserAge(age)) setUsers([...users, { id: Math.random(), name, age }]);
     };
 
-    const deleteUser = () => {
-        // a
+    const deleteUser = id => {
+        const newUsers = users.filter(user => user.id !== id);
+        setUsers(newUsers);
     };
 
     return (
@@ -73,7 +74,9 @@ const App = () => {
                     <UserItem key={user.id}>
                         <p>{user.name}</p>
                         <p>{user.age}</p>
-                        <box-icon onClick={deleteUser} type="solid" name="trash" color="red" animation="tada-hover"></box-icon>
+                        <button>
+                            <box-icon onClick={() => deleteUser(user.id)} type="solid" name="trash" color="red" animation="tada-hover"></box-icon>
+                        </button>
                     </UserItem>
                 ))}
             </UsersList>

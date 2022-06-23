@@ -2,6 +2,7 @@ import React, { useRef, useState } from 'react';
 import { MainContainer, TalkingImage, SecondaryContainer, H1, Label, P, Input, Button, UsersList, UserItem } from './styles';
 import TalkingImageSVG from './assets/talkingImg.svg';
 import 'boxicons';
+import axios from 'axios';
 
 const App = () => {
     const [users, setUsers] = useState([]);
@@ -24,11 +25,14 @@ const App = () => {
         }
     };
 
-    const registerUser = () => {
+    const registerUser = async () => {
         const name = nameInput.current.value;
         const age = ageInput.current.value;
 
-        if (verifyUserName(name) && verifyUserAge(age)) setUsers([...users, { id: Math.random(), name, age }]);
+        if (verifyUserName(name) && verifyUserAge(age)) {
+            const response = await axios.post('http://localhost:3001/users', { name, age });
+            console.log(response);
+        }
     };
 
     const deleteUser = id => {

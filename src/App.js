@@ -6,6 +6,7 @@ import axios from 'axios';
 
 const App = () => {
     const [users, setUsers] = useState([]);
+
     const nameInput = useRef();
     const ageInput = useRef();
 
@@ -30,9 +31,17 @@ const App = () => {
         const age = ageInput.current.value;
 
         if (verifyUserName(name) && verifyUserAge(age)) {
-            const response = await axios.post('http://localhost:3001/users', { name, age });
+            const {data: response} = await axios.post('http://localhost:3001/users', { name, age });
             console.log(response);
+
+            getUsers();
         }
+    };
+
+    const getUsers = async () => {
+        const { data: UsersList } = await axios.get('http://localhost:3001/users');
+        console.log(UsersList);
+        setUsers(UsersList);
     };
 
     const deleteUser = id => {

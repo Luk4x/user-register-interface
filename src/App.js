@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 import { MainContainer, TalkingImage, SecondaryContainer, H1, Label, P, Input, Button, UsersList, UserItem } from './styles';
 import TalkingImageSVG from './assets/talkingImg.svg';
 import 'boxicons';
@@ -31,23 +31,25 @@ const App = () => {
         const age = ageInput.current.value;
 
         if (verifyUserName(name) && verifyUserAge(age)) {
-            const {data: response} = await axios.post('http://localhost:3001/users', { name, age });
-            console.log(response);
-
-            getUsers();
+            const { data: newUser } = await axios.post('http://localhost:3001/users', { name, age });
+            console.log(newUser);
+            setUsers([...users, newUser]);
         }
-    };
-
-    const getUsers = async () => {
-        const { data: UsersList } = await axios.get('http://localhost:3001/users');
-        console.log(UsersList);
-        setUsers(UsersList);
     };
 
     const deleteUser = id => {
         const newUsers = users.filter(user => user.id !== id);
         setUsers(newUsers);
     };
+
+    useEffect(() => {
+        // fetchingUsers
+        (async () => {
+            const { data: usersList } = await axios.get('http://localhost:3001/users');
+            console.log(usersList);
+            setUsers(usersList);
+        })();
+    }, []);
 
     return (
         <MainContainer>

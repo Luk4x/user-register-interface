@@ -37,7 +37,8 @@ const App = () => {
         }
     };
 
-    const deleteUser = id => {
+    const deleteUser = async id => {
+        await axios.delete(`http://localhost:3001/users/${id}`);
         const newUsers = users.filter(user => user.id !== id);
         setUsers(newUsers);
     };

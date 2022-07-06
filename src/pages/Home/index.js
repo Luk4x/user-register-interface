@@ -3,12 +3,14 @@ import { MainContainer, TalkingImage, SecondaryContainer, H1, Label, P, Input, B
 import TalkingImageSVG from '../../assets/talkingImg.svg';
 import axios from 'axios';
 import 'boxicons';
+import { useHistory } from 'react-router-dom';
 
 const Home = () => {
     const [users, setUsers] = useState([]);
-
     const nameInput = useRef();
     const ageInput = useRef();
+
+    const history = useHistory();
 
     const verifyUserName = name => {
         if (name) return true;
@@ -34,6 +36,8 @@ const Home = () => {
             const { data: newUser } = await axios.post('http://localhost:3001/users', { name, age });
             console.log(newUser);
             setUsers([...users, newUser]);
+            console.log(history);
+            history.push('/users');
         }
     };
 

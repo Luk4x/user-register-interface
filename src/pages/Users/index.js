@@ -38,7 +38,7 @@ const Users = () => {
                         </UserItem>
                     ))}
                 </UsersList>
-                <Button>
+                <Button to="/">
                     <p>Back</p>
                     <box-icon type="solid" name="chevron-left" color="white" animation="flashing"></box-icon>
                 </Button>

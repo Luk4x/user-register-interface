@@ -89,7 +89,7 @@ export const Button = styled.button`
     height: 60px;
     margin-top: 20px;
     cursor: pointer;
-    font-size: 17px;
+    font-size: 17.5px;
     font-weight: 300;
     display: flex;
     align-items: center;

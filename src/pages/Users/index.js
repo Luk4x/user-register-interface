@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { MainContainer, TalkingImage, SecondaryContainer, UsersList, UserItem, Button } from './styles';
+import { MainContainer, TalkingImage, UsersList, UserItem, Button } from './styles';
+import SecondaryContainer from '../../components/BlurContainer';
 import H1 from '../../components/Title';
 import TalkingImageSVG from '../../assets/talkingImg2.svg';
 import 'boxicons';
@@ -26,7 +27,7 @@ const Users = () => {
     return (
         <MainContainer>
             <TalkingImage src={TalkingImageSVG} alt="people talking image" />
-            <SecondaryContainer>
+            <SecondaryContainer UsersPage={true}>
                 <H1>Users</H1>
                 <UsersList>
                     {users.map(user => (

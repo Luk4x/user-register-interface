@@ -1,5 +1,6 @@
 import React, { useRef, useState } from 'react';
-import { MainContainer, TalkingImage, SecondaryContainer, Label, P, Input, Button } from './styles';
+import { MainContainer, TalkingImage, Label, P, Input, Button } from './styles';
+import SecondaryContainer from '../../components/BlurContainer';
 import H1 from '../../components/Title';
 import TalkingImageSVG from '../../assets/talkingImg.svg';
 import axios from 'axios';

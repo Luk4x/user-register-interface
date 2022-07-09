@@ -16,7 +16,7 @@ const Home = () => {
     const history = useHistory();
 
     const verifyUserName = name => {
-        if (name) return true;
+        if (name && isNaN(name)) return true;
         else {
             nameInput.current.style.backgroundColor = 'rgba(255, 110, 110, 0.25)';
             return false;

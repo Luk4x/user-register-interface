@@ -37,14 +37,17 @@ export const UserItem = styled.li`
     padding: 15px 25px;
     width: 100%;
     height: 48px;
-    font-size: 16px;
-    color: whitesmoke;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
 
-    p {
-        font-size: 16px;
+    div {
+        width: 80%;
+        font-size: 18px;
+        color: whitesmoke;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
     }
 
     button {

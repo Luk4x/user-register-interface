@@ -35,8 +35,10 @@ const Users = () => {
                 <UsersList>
                     {users.map(user => (
                         <UserItem key={user.id}>
-                            <p>{user.name}</p>
-                            <p>{user.age}</p>
+                            <div>
+                                <p>{user.name}</p>
+                                <p>{user.age}</p>
+                            </div>
                             <button>
                                 <box-icon onClick={() => deleteUser(user.id)} type="solid" name="trash" color="red" animation="tada-hover"></box-icon>
                             </button>

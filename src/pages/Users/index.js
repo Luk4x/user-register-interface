@@ -13,7 +13,7 @@ const Users = () => {
     const history = useHistory();
 
     const deleteUser = async id => {
-        await axios.delete(`http://localhost:3001/users/${id}`);
+        await axios.delete(`${process.env.REACT_APP_API_URL}/users/${id}`);
         const newUsers = users.filter(user => user.id !== id);
         setUsers(newUsers);
     };
@@ -21,7 +21,7 @@ const Users = () => {
     useEffect(() => {
         // fetchingUsers
         (async () => {
-            const { data: usersList } = await axios.get('http://localhost:3001/users');
+            const { data: usersList } = await axios.get(`${process.env.REACT_APP_API_URL}/users`);
             console.log(usersList);
             setUsers(usersList);
         })();

@@ -36,7 +36,7 @@ const Home = () => {
         const age = ageInput.current.value;
 
         if (verifyUserName(name) && verifyUserAge(age)) {
-            const { data: newUser } = await axios.post('http://localhost:3001/users', { name, age });
+            const { data: newUser } = await axios.post(`${process.env.REACT_APP_API_URL}/users`, { name, age });
             console.log(newUser);
             setUsers([...users, newUser]);
             console.log(history);

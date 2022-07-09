@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 import Background1 from '../../assets/background2.svg';
-import { Link } from 'react-router-dom';
 
 export const MainContainer = styled.main`
     background: url('${Background1}') no-repeat fixed center center;
@@ -54,31 +53,5 @@ export const UserItem = styled.li`
         box-icon {
             cursor: pointer;
         }
-    }
-`;
-
-export const Button = styled(Link)`
-    background: rgba(255, 255, 255, 0.01);
-    text-decoration: none;
-    color: whitesmoke;
-    border-radius: 5px;
-    border: 1px solid whitesmoke;
-    width: 80%;
-    max-width: 380px;
-    height: 60px;
-    margin-top: 20px;
-    cursor: pointer;
-    font-size: 17.5px;
-    font-weight: 300;
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    justify-content: center;
-    gap: 6px;
-    transition: all 0.2s ease-in-out;
-
-    &:hover {
-        transform: translateY(3px);
-        opacity: 0.95;
     }
 `;

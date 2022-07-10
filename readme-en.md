@@ -19,7 +19,7 @@
 <br>
 
 ## About
-This project is an Interface that performs the registration of users, consuming the [API](https://github.com/Luk4x/user-register-API) that I built.<br>
+This project is an Mobile-First Interface that performs the registration of users, consuming the [API](https://github.com/Luk4x/user-register-API) that I built.<br>
 It consists in 2 pages:
 - The first performs the registration of users validated by the checks.
 - The second list the users already registered.

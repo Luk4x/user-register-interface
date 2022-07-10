@@ -2,8 +2,7 @@ import styled from 'styled-components';
 import Background1 from '../../assets/background1.svg';
 
 export const MainContainer = styled.main`
-    background: url('${Background1}') no-repeat fixed center center;
-    background-size: cover;
+    background: url('${Background1}') repeat fixed center center;
     display: flex;
     flex-direction: column;
     align-items: center;

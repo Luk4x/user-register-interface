@@ -27,7 +27,7 @@ It consists in 2 pages:
 ## Technologies used
 - [ReactJS](https://pt-br.reactjs.org)
 - [React Router](https://v5.reactrouter.com/web/guides/quick-start)
-- [styled-components](https://styled-components.com)
+- [Styled-Components](https://styled-components.com)
 - [Boxicons](https://boxicons.com/usage)
 - [Axios](https://axios-http.com/docs/intro)
 

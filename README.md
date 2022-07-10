@@ -19,7 +19,7 @@
 <br>
 
 ## Sobre
-Esse projeto é uma Interface que realiza o cadastro de usuários, consumindo a [API](https://github.com/Luk4x/user-register-API) que construí.
+Esse projeto é uma Interface que realiza o cadastro de usuários, consumindo a [API](https://github.com/Luk4x/user-register-API) que construí.<br>
 Ele é composto por 2 páginas:
 - A primeira realiza o cadastro dos usuários validados pelas verificações.
 - A segunda lista os usuários já cadastrados.
@@ -27,12 +27,12 @@ Ele é composto por 2 páginas:
 ## Tecnologias utilizadas
 - [ReactJS](https://pt-br.reactjs.org)
 - [React Router](https://v5.reactrouter.com/web/guides/quick-start)
-- [styled-components](https://styled-components.com)
+- [Styled-Components](https://styled-components.com)
 - [Boxicons](https://boxicons.com/usage)
 - [Axios](https://axios-http.com/docs/intro)
 
 ## Como usar
-Para clonar e executar este projeto, você precisará do [Git](https://git-scm.com/), [Node.js v16.13.2](https://nodejs.org/en/) ou superior instalados em seu computador.<br>No terminal:
+Para clonar e executar este projeto, você precisará do [Git](https://git-scm.com/), [Node.js v16.13.2](https://nodejs.org/en/) ou superior e [Yarn](https://yarnpkg.com/) instalados em seu computador.<br>No terminal:
 
 ```bash
 # Clone esse repositório:

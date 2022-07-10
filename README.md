@@ -1,72 +1,65 @@
-# ⚠️ !Project Under Construction! ⚠️
+<table align="right">
+  <tr>
+    <td>
+      <a href="readme-en.md">🇺🇸 English</a>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="README.md">🇧🇷 Português</a>
+    </td>
+  </tr>
+</table>
+<br>
 
-## Getting Started with Create React App
+# User Register Interface
+<p align="center">
+  <video src="https://user-images.githubusercontent.com/86276393/178146501-81a0a0e1-4c6a-41c8-957a-5e20e5e1a190.mp4">
+</p>
+<br>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Sobre
+Esse projeto é uma Interface que realiza o cadastro de usuários, consumindo a [API](https://github.com/Luk4x/user-register-API) que construí.
+Ele é composto por 2 páginas:
+- A primeira realiza o cadastro dos usuários validados pelas verificações.
+- A segunda lista os usuários já cadastrados.
 
-## Available Scripts
+## Tecnologias utilizadas
+- [ReactJS](https://pt-br.reactjs.org)
+- [React Router](https://v5.reactrouter.com/web/guides/quick-start)
+- [styled-components](https://styled-components.com)
+- [Boxicons](https://boxicons.com/usage)
+- [Axios](https://axios-http.com/docs/intro)
 
-In the project directory, you can run:
+## Como usar
+Para clonar e executar este projeto, você precisará do [Git](https://git-scm.com/), [Node.js v16.13.2](https://nodejs.org/en/) ou superior instalados em seu computador.<br>No terminal:
 
-### `yarn start`
+```bash
+# Clone esse repositório:
+$ git clone https://github.com/Luk4x/user-register-interface.git
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+# Entre no repositório:
+$ cd user-register-interface
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+# Instalar dependências 
+$ yarn install
 
-### `yarn test`
+# Executar o projeto
+$ yarn start
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# O servidor irá iniciar em http://localhost:3000/.
+```
 
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Contato dos Contribuintes
+<table>
+  <tr>
+    <td align="center">
+      <a href="https://www.linkedin.com/in/lucasmacielf/">
+        <img src="https://avatars.githubusercontent.com/Luk4x" width="150px;" alt="Luk4x Github Photo"/><br>
+        <sub>
+          <b>Lucas Maciel</b>
+        </sub>
+      </a>
+    </td>
+  </tr>
+</table>

@@ -19,7 +19,7 @@
 <br>
 
 ## Sobre
-Esse projeto é uma Interface que realiza o cadastro de usuários, consumindo a [API](https://github.com/Luk4x/user-register-API) que construí.<br>
+Esse projeto é uma Interface Mobile-First que realiza o cadastro de usuários, consumindo a [API](https://github.com/Luk4x/user-register-API) que construí.<br>
 Ele é composto por 2 páginas:
 - A primeira realiza o cadastro dos usuários validados pelas verificações.
 - A segunda lista os usuários já cadastrados.

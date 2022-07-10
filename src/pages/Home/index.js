@@ -1,5 +1,6 @@
 import React, { useRef, useState } from 'react';
-import { MainContainer, TalkingImage, Label, P, Input } from './styles';
+import { TalkingImage, Label, P, Input } from './styles';
+import MainContainer from '../../components/MainContainer';
 import H1 from '../../components/Title';
 import SecondaryContainer from '../../components/BlurContainer';
 import Button from '../../components/Button';
@@ -45,7 +46,7 @@ const Home = () => {
     };
 
     return (
-        <MainContainer>
+        <MainContainer isBg1={true}>
             <TalkingImage src={TalkingImageSVG} alt="people talking image" />
             <SecondaryContainer>
                 <H1>Yo!</H1>

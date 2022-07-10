@@ -1,16 +1,4 @@
 import styled from 'styled-components';
-import Background1 from '../../assets/background1.svg';
-
-export const MainContainer = styled.main`
-    background: url('${Background1}') repeat fixed center center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    gap: 40px;
-    padding-top: 30px;
-    min-height: 100vh;
-`;
 
 export const TalkingImage = styled.img`
     width: 80vw;

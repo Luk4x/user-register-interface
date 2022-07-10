@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useHistory } from 'react-router-dom';
-import { MainContainer, TalkingImage, UsersList, UserItem } from './styles';
+import { TalkingImage, UsersList, UserItem } from './styles';
+import MainContainer from '../../components/MainContainer';
 import H1 from '../../components/Title';
 import SecondaryContainer from '../../components/BlurContainer';
 import Button from '../../components/Button';

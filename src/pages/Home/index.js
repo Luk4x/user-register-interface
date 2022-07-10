@@ -1,10 +1,10 @@
 import React, { useRef, useState } from 'react';
-import { TalkingImage, Label, P, Input } from './styles';
+import { Label, P, Input } from './styles';
 import MainContainer from '../../components/MainContainer';
+import Image from '../../components/Image';
 import H1 from '../../components/Title';
 import SecondaryContainer from '../../components/BlurContainer';
 import Button from '../../components/Button';
-import TalkingImageSVG from '../../assets/talkingImg.svg';
 import axios from 'axios';
 import 'boxicons';
 import { useHistory } from 'react-router-dom';
@@ -47,7 +47,7 @@ const Home = () => {
 
     return (
         <MainContainer isBg1={true}>
-            <TalkingImage src={TalkingImageSVG} alt="people talking image" />
+            <Image isImg1={true} alt="people talking image" />
             <SecondaryContainer>
                 <H1>Yo!</H1>
                 <Label>

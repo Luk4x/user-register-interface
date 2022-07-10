@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { useHistory } from 'react-router-dom';
-import { TalkingImage, UsersList, UserItem } from './styles';
+import { UsersList, UserItem } from './styles';
 import MainContainer from '../../components/MainContainer';
+import Image from '../../components/Image';
 import H1 from '../../components/Title';
 import SecondaryContainer from '../../components/BlurContainer';
 import Button from '../../components/Button';
-import TalkingImageSVG from '../../assets/talkingImg2.svg';
 import 'boxicons';
 import axios from 'axios';
 
@@ -30,7 +30,7 @@ const Users = () => {
 
     return (
         <MainContainer>
-            <TalkingImage src={TalkingImageSVG} alt="people talking image" />
+            <Image alt="avatars image" />
             <SecondaryContainer UsersPage={true}>
                 <H1>Users</H1>
                 <UsersList>

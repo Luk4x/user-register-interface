@@ -1,10 +1,5 @@
 import styled from 'styled-components';
 
-export const TalkingImage = styled.img`
-    width: 80vw;
-    max-width: 800px;
-`;
-
 export const UsersList = styled.ul`
     list-style-type: none;
     width: 80%;

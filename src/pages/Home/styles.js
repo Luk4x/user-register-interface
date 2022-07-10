@@ -1,10 +1,5 @@
 import styled from 'styled-components';
 
-export const TalkingImage = styled.img`
-    width: 80vw;
-    max-width: 800px;
-`;
-
 export const Label = styled.label`
     display: flex;
     flex-direction: column;

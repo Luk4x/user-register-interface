@@ -16,6 +16,8 @@
 <p align="center">
   <video src="https://user-images.githubusercontent.com/86276393/178159009-587ced80-df99-4808-bc91-b142cb9fd0a8.mp4">
 </p>
+
+> Acesse o projeto [AQUI](https://luk4x-user-register.herokuapp.com/)
 <br>
 
 ## Sobre

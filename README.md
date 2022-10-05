@@ -12,26 +12,53 @@
 </table>
 <br>
 
-# User Register Interface
-<p align="center">
-  <video src="https://user-images.githubusercontent.com/86276393/178159009-587ced80-df99-4808-bc91-b142cb9fd0a8.mp4">
-</p>
+# 👥 Users Project Interface
 
-> Acesse o projeto [AQUI](https://luk4x-user-register.herokuapp.com/)
+<br>
+<p align="center">
+  <a href="#-apresentação-em-vídeo-do-projeto">Vídeo</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-tecnologias-utilizadas">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-sobre">Sobre</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-páginas">Páginas</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-demais-componentes">Componentes</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-clonando-o-projeto">Clone</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-contato-dos-contribuintes">Contato</a>
+</p>
 <br>
 
-## Sobre
-Esse projeto é uma Interface Mobile-First que realiza o cadastro de usuários, consumindo a [API](https://github.com/Luk4x/user-register-API) que construí.<br>
-Ele é composto por 2 páginas:
-- A primeira realiza o cadastro dos usuários validados pelas verificações.
-- A segunda lista os usuários já cadastrados.
+## 📹 Apresentação em Vídeo do Projeto
+<div align="center">
+  <video src="https://user-images.githubusercontent.com/86276393/178159009-587ced80-df99-4808-bc91-b142cb9fd0a8.mp4">
+</div>
 
-## Tecnologias utilizadas
+> **Caso o vídeo apresente algum erro, recarregue a página!**<br>
+> Acesse o projeto online **[AQUI](https://luk4x-user-register.herokuapp.com/)**
+
+## 🚀 Tecnologias utilizadas
+
 - [ReactJS](https://pt-br.reactjs.org)
 - [React Router](https://v5.reactrouter.com/web/guides/quick-start)
 - [Styled-Components](https://styled-components.com)
 - [Boxicons](https://boxicons.com/usage)
 - [Axios](https://axios-http.com/docs/intro)
+- [Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+- [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
+- [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
+- [CRA](https://create-react-app.dev/)
+- [Yarn](https://yarnpkg.com/)
+
+## 📝 Sobre
+
+> Assistir o vídeo acima e/ou acessar o projeto online ajudará na compreensão da explicação!
+
+Esse projeto é a Interface Mobile-First do **Users**, uma aplicação Web que realiza o cadastro e a gerência de usuários. Essas dados ficam armazenados em sua [API](https://github.com/Luk4x/user-register-API) que desenvolvi essencialmente com ExpressJS.
+
+Ele é composto por 2 páginas:
+- A primeira realiza o cadastro dos usuários validados pelas verificações.
+- A segunda lista os usuários já cadastrados.
+
+
+
 
 ## Como usar
 Para clonar e executar este projeto, você precisará do [Git](https://git-scm.com/), [Node.js v16.13.2](https://nodejs.org/en/) ou superior e [Yarn](https://yarnpkg.com/) instalados em seu computador.<br>No terminal:

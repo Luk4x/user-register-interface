@@ -12,47 +12,88 @@
 </table>
 <br>
 
-# User Register Interface
+# 👥 Users Project Interface
+
+<br>
 <p align="center">
-  <video src="https://user-images.githubusercontent.com/86276393/178159009-587ced80-df99-4808-bc91-b142cb9fd0a8.mp4">
+  <a href="#-project-video-presentation">Video</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-technologies-used">Technologies</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-about">About</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-pages">Pages</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-other-components">Components</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-cloning-the-project">Cloning</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-contributor-contact">Contact</a>
 </p>
-  
-> Access the project [HERE](https://luk4x-user-register.herokuapp.com/)
 <br>
 
-## About
-This project is an Mobile-First Interface that performs the registration of users, consuming the [API](https://github.com/Luk4x/user-register-API) that I built.<br>
-It consists in 2 pages:
-- The first performs the registration of users validated by the checks.
-- The second list the users already registered.
+## 📹 Project Video Presentation
+<div align="center">
+  <video src="https://user-images.githubusercontent.com/86276393/178159009-587ced80-df99-4808-bc91-b142cb9fd0a8.mp4">
+</div>
 
-## Technologies used
+> **If the video has any errors, reload the page!**<br>
+> Access the project online **[HERE](https://luk4x-user-register.herokuapp.com/)**
+
+## 🚀 Technologies used
+
 - [ReactJS](https://pt-br.reactjs.org)
 - [React Router](https://v5.reactrouter.com/web/guides/quick-start)
 - [Styled-Components](https://styled-components.com)
 - [Boxicons](https://boxicons.com/usage)
 - [Axios](https://axios-http.com/docs/intro)
+- [Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+- [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
+- [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
+- [CRA](https://create-react-app.dev/)
+- [Yarn](https://yarnpkg.com/)
 
-## How to use
-To clone and run this application, you'll need [Git](https://git-scm.com/), [Node.js v16.13.2](https://nodejs.org/en/) or higher and [Yarn](https://yarnpkg.com/) installed on your computer.<br>In terminal:
+## 📝 About
+
+> Watching the video above and/or accessing the project online will help you understand the explanation!
+
+This project is the Mobile-First Interface of **Users**, a Web application that performs the registration and management of users. This data is stored in its [API](https://github.com/Luk4x/user-register-API) that I developed essentially with ExpressJS.
+  
+### 📄 Pages
+
+The project consists of 2 page components, which are:
+  
+  - **Home**: In addition to being the Users home page, it is responsible for registering users validated by API checks.
+  - **Users**: This page is responsible for listing the users already registered in the API, also providing the option to delete them.
+
+### 📑 Other Components
+
+Apart from the **Routes**, **GlobalStyles** and **main** components, the project has 5 more components that are reused on both pages, which are:
+  
+  - **MainContainer**: This component is relative to the container that houses the users' information.
+  - **BlurContainer**: This component is related to the blur effect behind user information.
+  - **Image**: This component is relative to the Users _Logo_ and _Users Talking_ images.
+  - **Button**: This component is relative to the _Register_ and _Back_ buttons.
+  - **Title**: This component is relative to the titles of the **MainContainer**.
+
+## 📖 Cloning the Project
+
+To clone and run this project on your computer you will need [Git](https://git-scm.com/), [Node.js v16.13.2](https://nodejs.org/en/) or higher and [Yarn](https://yarnpkg.com/) previously installed.<br>
+You'll also need the project's API running, so before continuing here, go to [API Repository](https://github.com/Luk4x/user-register-API) and go through the steps on how to clone and run it first!<br>
+After these two steps, in the terminal:
 
 ```bash
-# Clone this repository:
-$ git clone https://github.com/Luk4x/user-register-interface.git
+# Clone this repository with:
+> git clone https://github.com/Luk4x/user-register-interface.git
 
-# Go into the repository:
-$ cd user-register-interface
+# Enter the repository with:
+> cd user-register-interface
 
-# Install dependencies: 
-$ yarn install
+# Install dependencies with:
+> yarn install
 
-# Run the project:
-$ yarn start
+# Run the project with:
+> yarn start
 
-# The server will start at http://localhost:3000/.
+# Once this is done, you will be able to access the project through the link that will appear in the terminal! (something like http://localhost:3000/ or http://127.0.0.1:5173/)
 ```
 
-## Contributor Contact
+## 🤝 Contributor Contact
+
 <table>
   <tr>
     <td align="center">
@@ -65,3 +106,7 @@ $ yarn start
     </td>
   </tr>
 </table>
+
+<p align="right">
+  <a href="#-users-project-interface">Voltar ao Topo</a>
+</p>

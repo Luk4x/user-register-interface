@@ -53,33 +53,47 @@
 
 Esse projeto é a Interface Mobile-First do **Users**, uma aplicação Web que realiza o cadastro e a gerência de usuários. Essas dados ficam armazenados em sua [API](https://github.com/Luk4x/user-register-API) que desenvolvi essencialmente com ExpressJS.
 
-Ele é composto por 2 páginas:
-- A primeira realiza o cadastro dos usuários validados pelas verificações.
-- A segunda lista os usuários já cadastrados.
+### 📄 Páginas
 
+O projeto é composto por 2 componentes de páginas, sendo eles:
 
+  - **Home**: Além de ser a página inicial do Users, ela responsável por realizar o cadastro dos usuários validados pelas verificações na API.
+  - **Users**: Essa página é responsável por listar os usuários já cadastrados na API, disponibilizando também a opção de deletá-los.
 
+### 📑 Demais Componentes
 
-## Como usar
-Para clonar e executar este projeto, você precisará do [Git](https://git-scm.com/), [Node.js v16.13.2](https://nodejs.org/en/) ou superior e [Yarn](https://yarnpkg.com/) instalados em seu computador.<br>No terminal:
+Fora os componentes de Rotas (**Routes**), estilos globais (**GlobalStyles**) e Root (**main**), o projeto conta com mais 5 componentes que são reaproveitados em ambas as páginas, sendo eles:
+
+- **MainContainer**: Esse componente é relativo ao container que abriga as informações dos usuários.
+- **BlurContainer**: Esse componente é relativo ao efeito de blur por trás das informações dos usuários.
+- **Image**: Esse componente é relativo às imagens de _Logo_ e _Users Talking_ do Users.
+- **Button**: Esse componente é relativo aos botões de _Register_ e _Back_.
+- **Title**: Esse componente é relativo aos títulos do **MainContainer**.
+
+## 📖 Clonando o Projeto
+
+Para clonar e executar este projeto em seu computador, você precisará do [Git](https://git-scm.com/), [Node.js v16.13.2](https://nodejs.org/en/) ou superior e [Yarn](https://yarnpkg.com/) previamente instalados.<br>
+Você também precisará da API do projeto rodando, portanto, antes de continuar por aqui, vá ao [Repositório da API](https://github.com/Luk4x/user-register-API) e faça os passos sobre como cloná-la e executá-la primeiro!<br>
+Feito esses dois passos, no terminal:
 
 ```bash
-# Clone esse repositório:
-$ git clone https://github.com/Luk4x/user-register-interface.git
+# Clone esse repositório com:
+> git clone https://github.com/Luk4x/user-register-interface.git
 
-# Entre no repositório:
-$ cd user-register-interface
+# Entre no repositório com:
+> cd user-register-interface
 
-# Instalar dependências 
-$ yarn install
+# Instale as dependências com:
+> yarn install
 
-# Executar o projeto
-$ yarn start
+# Execute o projeto com:
+> yarn start
 
-# O servidor irá iniciar em http://localhost:3000/.
+# Feito isso, você já poderá acessar o projeto pelo link que aparecerá no terminal! (algo como http://localhost:3000/ ou http://127.0.0.1:5173/)
 ```
 
-## Contato dos Contribuintes
+## 🤝 Contato dos Contribuintes
+
 <table>
   <tr>
     <td align="center">
@@ -92,3 +106,7 @@ $ yarn start
     </td>
   </tr>
 </table>
+
+<p align="right">
+  <a href="#-users-project-interface">Voltar ao Topo</a>
+</p>

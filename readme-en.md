@@ -33,7 +33,7 @@
 </div>
 
 > **If the video has any errors, reload the page!**<br>
-> Access the project online **[HERE](https://luk4x-user-register.herokuapp.com/)**
+> Access the project online **[HERE](https://luk4x-user-register.netlify.app/)**
 
 ## 🚀 Technologies used
 
